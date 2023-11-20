@@ -1,19 +1,3 @@
-# Tests App
-This is a React application that fetches data from a JSON file using the API. The retrieved data is then displayed in a table format, allowing users to click
-on each item to navigate to a separate page for more details. The app also features a search functionality,
-enabling users to look for specific elements by name, and provides 
-sorting options for four different fields.
-
-### Technologies
-
-This project is built using the following technologies:
-
-- [React](https://reactjs.org/) 18.2 - A JavaScript library for building user interfaces.
-- [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript that adds static types.
-- [SCSS](https://sass-lang.com/) - A popular CSS preprocessor for writing styles with more features.
-- [Create React App](https://create-react-app.dev/) - A tool to set up a new React project with zero build configuration.
-- [React Router DOM](https://reactrouter.com/) 6 - A declarative routing library for React applications.
-
 ### For running the application follow these steps:
 
 1. Clone and run [the Repository](https://development.kameleoon.net/oivanov/frontend-interview-task-api)
@@ -25,4 +9,50 @@ npm install
 ```
 npm start
 ```
+# Interview task for frontend developers
+
+This is a test task to asses your skills in React.js, HTML and CSS.
+
+### Technical requirements
+
+- To complete this task, you should use the `create-react-app` application template ([docs](https://create-react-app.dev/docs/getting-started)).
+- You are not allowed to use any external libraries except for `node-sass`, `axios`, `classnames`, `react-router-dom`, `prop-types`;
+- You can use `prop-types` library if you don't use **`TypeScript`**.
+- Demonstrate use of **`React hooks`**.
+- You can use **`css`** or **`scss`** of your choice.
+
+### Functionality requirements
+
+The app is a dashboard page which used to display a list of created A/B tests ([Figma](https://www.figma.com/file/PFdFpIajQbuGibIbEYnE3l/Interview-task-for-frontend-developers)).
+
+![Mockup](./resources/dashboard-mockup.png)
+
+- The table is filled with the data that is requested from the JSON file using the API in [this repository](https://development.kameleoon.net/oivanov/frontend-interview-task-api). You need to clone the project to your local machine and run it.
+- When a user hovers over a table row it should be highlighted as shown in the mockup.
+- Sites in the corresponding column must be displayed without the **`http`** or **`https`** protocols and **`www`** prefix.
+- A user should be able to filter by item name. If the item exists we hide other
+records and show only items that were found in the list. If no records are found there should
+be a message with the corresponding text and a reset button (see [Figma](https://www.figma.com/file/PFdFpIajQbuGibIbEYnE3l/Interview-task-for-frontend-developers)).
+- A user should be able to sort (**`ASC`**, **`DESC`**) by clicking on the titles of the columns:
+  - **`name`**, **`type`** and **`site`** should be sorted in alphabetical order
+  - **`status`** should be sorted in:
+    - **`ASC`**: Online, Paused, Stopped, Draft
+    - **`DESC`**: Draft, Stopped, Paused, Online
+
+### Additional tasks
+
+- Using the `react-router-dom` library, implement routing between three pages: **`dashboard`**, **`results`**, and **`finalize`**. And don't forget to load the necessary data for each page.
+- When a user clicks on the **`Results`** or **`Finalize`** button on dashboard page, you should redirect to URLs **`/results/[testId]`** and **`/finalize/[testId]`** accordingly, without reloading the browser window.
+
+It will be a plus if you:
+- will use TypeScript to complete the task
+- write tests
+- if a user can interact with the interface using the keyboard.
+
+
+### The result of executing
+
+The solution to this task is recommended to be posted on any public git service of your choice.
+
+Good luck!
 
