@@ -25,8 +25,6 @@ This is a test task to asses your skills in React.js, HTML and CSS.
 
 The app is a dashboard page which used to display a list of created A/B tests ([Figma](https://www.figma.com/file/PFdFpIajQbuGibIbEYnE3l/Interview-task-for-frontend-developers)).
 
-![Mockup](./resources/dashboard-mockup.png)
-
 - The table is filled with the data that is requested from the JSON file using the API in [this repository](https://development.kameleoon.net/oivanov/frontend-interview-task-api). You need to clone the project to your local machine and run it.
 - When a user hovers over a table row it should be highlighted as shown in the mockup.
 - Sites in the corresponding column must be displayed without the **`http`** or **`https`** protocols and **`www`** prefix.
