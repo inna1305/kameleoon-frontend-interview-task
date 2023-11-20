@@ -1,0 +1,100 @@
+@import "../../scss/mixins";
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0 5px;
+}
+
+.button {
+  @include button;
+}
+
+tr {
+  background-color: white;
+  height: 69px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+}
+
+td {
+  padding: 9px;
+}
+
+thead > tr {
+  height: 30px;
+  background: none;
+  text-align: center;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  & > th {
+    font: 500 11px "Roboto";
+    text-transform: uppercase;
+    color: var(--inactive-color);
+    padding-left: 11px;
+    text-align: start;
+  }
+}
+
+thead > tr > th:hover {
+  color: black;
+  position: relative;
+}
+
+thead > tr > th:first-child {
+  border-left: 5px solid transparent;
+}
+
+.name, .status {
+  font: 500 13px "Roboto", sans-serif;
+}
+
+.type, .site {
+  font: 400 12px "Roboto", sans-serif;
+}
+
+
+td:first-child,
+th:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+
+//table column alignment
+
+td:nth-child(1),
+th:nth-child(1) {
+  width: 44%;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+  width: 12%;
+}
+
+
+td:nth-child(3),
+th:nth-child(3) {
+  width: 12%;
+}
+
+td:nth-child(4),
+th:nth-child(4) {
+  width: 20%;
+}
+
+td:nth-child(5),
+th:nth-child(5) {
+  width: 12%;
+}
+
+

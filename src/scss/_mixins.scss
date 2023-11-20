@@ -1,0 +1,23 @@
+@mixin button {
+  width: 95px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  font: 500 12px "Montserrat", sans-serif;
+  color: white;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin container {
+  margin: auto;
+  max-width: var(--main-container);
+}
+
+@mixin title {
+  margin: 45px 0;
+  font: 700 26px "Montserrat", sans-serif;
+  line-height: 31.69px;
+  color: var(--main-font-color);
+}

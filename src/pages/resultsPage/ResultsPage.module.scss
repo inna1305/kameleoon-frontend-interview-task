@@ -1,0 +1,35 @@
+@import "../../scss/mixins";
+
+.title {
+  @include title;
+  margin-bottom: 10px;
+}
+
+.container {
+  @include container;
+  position: relative;
+  height: 100vh;
+}
+
+.name {
+  font: 600 14px 'Montserrat';
+}
+
+.buttonContainer {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background: none;
+  font: 700 18px 'Montserrat';
+  border: none;
+  padding: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

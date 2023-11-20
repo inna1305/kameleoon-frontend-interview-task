@@ -1,0 +1,9 @@
+@import "../../scss/mixins";
+
+.title {
+  @include title;
+}
+
+.container {
+  @include container;
+}
