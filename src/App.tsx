@@ -1,29 +1,9 @@
-import React, {createContext, useState} from 'react';
+import React, {useState} from 'react';
 import {Dashboard} from './pages/dashboard/Dashboard';
-import {ISearchContext, ISitesContext, ITestsContext, Site, Test} from './types';
+import {Site, Test} from './types';
 import {Navigate, Route, Routes} from 'react-router-dom';
 import {ResultsPage} from './pages/resultsPage/ResultsPage';
-
-const initSitesContext: ISitesContext = {
-    sites: [],
-    setSites: () => {
-    }
-};
-
-const initTestsContext: ITestsContext = {
-    tests: [],
-    setTests: () => {
-    }
-}
-
-const initSearchContext: ISearchContext = {
-    searchWord: '',
-    setSearchWord: () => {
-    }
-}
-export const TestsContext = createContext(initTestsContext);
-export const SitesContext = createContext(initSitesContext);
-export const SearchWordContext = createContext(initSearchContext);
+import {SitesContext, TestsContext, SearchWordContext} from './contexts';
 
 export default function App() {
     const [sites, setSites] = useState<Site[]>([]);

@@ -1,6 +1,6 @@
 import React, {ReactElement, useContext} from 'react';
-import {SearchWordContext} from '../../App';
 import styles from './NoResults.module.scss';
+import {SearchWordContext} from '../../contexts';
 
 export const NoResults = (): ReactElement => {
     const searchContext = useContext(SearchWordContext);

@@ -2,7 +2,7 @@ import React, {ReactElement, useContext, useState} from 'react';
 import styles from './Dashboard.module.scss';
 import {SearchField} from '../../components/searchField/SearchField';
 import {Table} from '../../components/table/Table';
-import {TestsContext} from '../../App';
+import {TestsContext} from '../../contexts';
 
 export const Dashboard = (): ReactElement => {
     const countOfTests = useContext(TestsContext);

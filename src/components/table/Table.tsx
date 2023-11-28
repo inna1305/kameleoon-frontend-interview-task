@@ -4,10 +4,10 @@ import {
     createRows,
     filterContextTestsByName,
 } from './helpers/helpers';
-import {SearchWordContext, SitesContext, TestsContext} from '../../App';
 import {getData} from '../../core/helpers';
 import {sortByAlphabet, sortByStatus} from './helpers/sortHelpers';
 import {NoResults} from '../noResults/NoResults';
+import {SearchWordContext, SitesContext, TestsContext} from '../../contexts';
 
 export interface TableProps {
     setCountOfFoundedTests: Dispatch<SetStateAction<number>>

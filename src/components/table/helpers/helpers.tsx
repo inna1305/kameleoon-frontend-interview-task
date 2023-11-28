@@ -78,6 +78,7 @@ export const createRows = async (tests: Test[], sites: Site[]): Promise<ReactEle
 }
 
 export const filterContextTestsByName = async (tests: Test[], word: string): Promise<Test[]> => {
+    console.log(word);
     return tests
         .filter(test => test.name.toLowerCase().includes(word.toLowerCase()));
 }
